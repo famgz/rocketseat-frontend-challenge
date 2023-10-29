@@ -4,3 +4,12 @@ https://github.com/Rocketseat/frontend-challenge
 
 https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449
 
+-----
+
+npx create-next-app@latest
+
+cd capputeeno
+
+npm install styled-components@latest
+
+npm run dev
