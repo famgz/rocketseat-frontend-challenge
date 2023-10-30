@@ -20,7 +20,6 @@ const Container = styled.button`
     cursor: pointer;
     border: none;
     background: transparent;
-
 `
 
 export function CartControl() {
