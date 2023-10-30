@@ -15,19 +15,21 @@ const CartCount = styled.span`
     margin-left: -10px;
 `
 
-const Container = styled.div`
+const Container = styled.button`
     position: relative;
+    cursor: pointer;
+    border: none;
+    background: transparent;
 
 `
 
 export function CartControl() {
-    const { value } = useLocalStorage('cart-items')
-    // const value = ''
+    const { value } = useLocalStorage('cart-items', [])
 
     return (
         <Container>
             <CartIcon></CartIcon>
-            {value.length && <CartCount>{value.length}</CartCount>}
+            {value.length > 0 && <CartCount>{value.length}</CartCount>}
         </Container>
     )
 }

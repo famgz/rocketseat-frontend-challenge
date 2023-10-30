@@ -13,3 +13,5 @@ cd capputeeno
 npm install styled-components@latest
 
 npm run dev
+
+npm install axios @tanstack/react-query

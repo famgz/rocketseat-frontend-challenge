@@ -39,7 +39,6 @@ export function PrimaryInputWSearchIcon(props: InputProps) {
         <InputContainer>
             <PrimaryInput {...props} />
             <SearchIcon />
-            <CartIcon />
         </InputContainer>
     )
 }
