@@ -3,11 +3,14 @@ import { CartIcon } from "./icons/cart-icon";
 import styled from "styled-components";
 
 const CartCount = styled.span`
+    display: inline-flex;
     width: 17px;
     height: 17px;
+    align-items: center;
+    justify-content: center;
     border-radius: 100%;
-    padding: 0 5px;
     font-size: 10px;
+    /* padding: 2px 5px; */
 
     background-color: var(--delete-color);
     color: white;
@@ -25,10 +28,17 @@ const Container = styled.button`
 export function CartControl() {
     const { value } = useLocalStorage('cart-items', [])
 
+    let quantity: number = 0;
+
+    value.forEach(item => {
+        quantity += item.quantity ?? 0
+    })
+
     return (
         <Container>
             <CartIcon></CartIcon>
-            {value.length > 0 && <CartCount>{value.length}</CartCount>}
+            {/* { {value.length > 0 && <CartCount>{value.length}</CartCount>} } */}
+            {quantity > 0 && <CartCount>{quantity}</CartCount>}
         </Container>
     )
 }
