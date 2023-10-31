@@ -60,7 +60,6 @@ export function Header(props: HeaderProps) {
                     value={search}
                     handleChange={setSearch}
                     placeholder="Procurando por algo especifico?"
-
                 />
                 <CartControl />
             </div>
