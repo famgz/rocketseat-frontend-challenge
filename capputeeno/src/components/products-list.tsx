@@ -23,9 +23,9 @@ export function ProductsList() {
                 title={product.name}
                 price={product.price_in_cents}
                 image={product.image_url}
-                category={product.category}
+                id={product.id}
             />
-            )}
+        )}
         </ListContainer>
     )
 }
