@@ -21,7 +21,6 @@ interface BtnProps {
     navigate: string;
 }
 
-
 export function BackBtn({ navigate }: BtnProps) {
     const router = useRouter()
     const handleNavigate = () => {
